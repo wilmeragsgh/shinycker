@@ -25,7 +25,7 @@ The Shiny Server log and all application logs are written to `stdout` and can be
 
 The logs for individual apps are still kept in the `/var/log/shiny-server` directory, as described in the [Shiny Server Administrator's Guide]( http://docs.rstudio.com/shiny-server/#application-error-logs). 
 
-## acknowledgement
+## Acknowledgement
 This repo exists because other people helped in the process:
 - [Learn How to Dockerize a ShinyApp in 7 Steps · Björn Bos](https://www.bjoern-hartmann.de/post/learn-how-to-dockerize-a-shinyapp-in-7-steps/) by [bjoernbos](https://github.com/bjoernbos)
 - [GitHub - rocker-org/shiny](https://github.com/rocker-org/shiny)
