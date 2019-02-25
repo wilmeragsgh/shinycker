@@ -5,9 +5,13 @@ This is a Dockerfile for Shiny Server based on `r-base` image.
 
 ## Usage:
 
-To build an image with specific packages for your app:
+To build an image with specific packages your_pkgs ( e,g: `\'shinydashboard\',\'plotly\'` with explicit `\'` :point_left: ) for your_app:
 ```sh
-docker build 
+docker build -t your_app \
+    --build-arg app_dir=your_app/ \
+    --build-arg conf_file=shiny-server.conf \
+    --build-arg add_pkg=your_pkgs \
+    --no-cache .
 ```
 
 To run a temporary container with your_app that store your logs on `logs/`:
