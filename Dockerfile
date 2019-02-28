@@ -2,7 +2,6 @@
 FROM r-base:3.5.0
 
 ARG add_pkg=\'shinydashboard\'
-ARG conf_file=''
 
 # Install Ubuntu packages
 RUN apt-get update && apt-get install -y \
@@ -27,7 +26,7 @@ RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubu
 RUN R -e "install.packages(c('shiny',${add_pkg}), repos='http://cran.rstudio.com/')"
 
 # Copy configuration files into the Docker image
-COPY ${conf_file} /etc/shiny-server/shiny-server.conf
+COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
 
 # Make the ShinyApp available at port 80
 EXPOSE 80
