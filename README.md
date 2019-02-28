@@ -8,7 +8,6 @@ This is a Dockerfile for Shiny Server based on `r-base` image, including some ba
 To build an image with specific packages your_pkgs ( e,g: `\'shinydashboard\',\'plotly\'` with explicit `\'` :point_left: ) for your_app:
 ```sh
 docker build -t your_app \
-    --build-arg conf_file=shiny-server.conf \
     --build-arg add_pkg=your_pkgs \
     --no-cache .
 ```
