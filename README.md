@@ -3,6 +3,14 @@
 
 This is a Dockerfile for Shiny Server based on `r-base` image, including some basic functional conf file for the container.
 
+## Requirements
+
+You need to have a working installation of Docker, and you could have one with:
+```sh
+curl -sSL https://get.docker.com/ | sh
+```
+If you're not willing to run a random shell script, please see the [installation](https://docs.docker.com/engine/installation/linux/) instructions for your distribution.
+
 ## Usage:
 
 To build an image with specific packages your_pkgs ( e,g: `\'shinydashboard\',\'plotly\'` with explicit `\'` :point_left: ) for your_app:
