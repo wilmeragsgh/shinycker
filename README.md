@@ -1,5 +1,5 @@
 # Shinycker
-### Template for Dockerized Shiny (R\) application
+### Template for Dockerized Shiny (R\) application deployment
 
 This is a Dockerfile for Shiny Server based on `r-base` image, including some basic functional conf file for the container.
 
